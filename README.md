@@ -51,7 +51,7 @@ git init
 git add .
 git commit -m "Initial FAQ Accordion project"
 git branch -M main
-git remote add origin https://github.com/your-username/your-repository.git
+git remote add origin https://github.com/your-username/rutvibjadav.git
 git push -u origin main
 ```
 
