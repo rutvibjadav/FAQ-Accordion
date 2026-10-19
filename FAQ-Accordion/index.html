@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FAQ Accordion website with searchable frequently asked questions and modern responsive design."
+    />
+    <title>FAQ Accordion | Frequently Asked Questions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container header-inner">
+          <div class="brand" aria-label="FAQ Hub brand logo">
+            <span class="brand-mark">F</span>
+            <span class="brand-name">FAQ Hub</span>
+          </div>
+
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="#top" class="nav-link">Home</a>
+          </nav>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="container hero-inner">
+            <div class="hero-content">
+              <span class="badge">GOT QUESTIONS?</span>
+              <h1>Frequently Asked Questions</h1>
+              <p>
+                Find answers to the most common questions about our website and
+                services.
+              </p>
+
+              <div class="search-box" role="search">
+                <label class="sr-only" for="faq-search">Search questions</label>
+                <span class="search-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M10.5 3a7.5 7.5 0 015.95 12.05l4.35 4.35 1.41-1.41-4.35-4.35A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"
+                    />
+                  </svg>
+                </span>
+                <input
+                  id="faq-search"
+                  type="search"
+                  placeholder="Search your questions..."
+                  aria-label="Search FAQ questions"
+                />
+                <button
+                  class="clear-search"
+                  type="button"
+                  aria-label="Clear search"
+                  hidden
+                >
+                  Clear
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="faq-section" aria-labelledby="faq-title">
+          <div class="container">
+            <div class="faq-card">
+              <h2 id="faq-title" class="sr-only">FAQ list</h2>
+
+              <div class="faq-list" id="faq-list">
+                <div class="faq-item">
+                  <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq-answer-1"
+                  >
+                    <span class="question-text">What is this website about?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                  </button>
+                  <div id="faq-answer-1" class="faq-answer" role="region" hidden>
+                    <p>
+                      This website is a central place where visitors can quickly
+                      find helpful information about our services, digital tools,
+                      and common support topics. It is designed to make important
+                      answers easy to access and understand.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq-answer-2"
+                  >
+                    <span class="question-text">How do I create an account?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                  </button>
+                  <div id="faq-answer-2" class="faq-answer" role="region" hidden>
+                    <p>
+                      To create an account, click the sign-up button in the top
+                      navigation or main page, fill in your name, email address,
+                      and password, then confirm your details to complete the
+                      registration process.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq-answer-3"
+                  >
+                    <span class="question-text">Is registration free?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                  </button>
+                  <div id="faq-answer-3" class="faq-answer" role="region" hidden>
+                    <p>
+                      Yes, basic registration is completely free. Some premium or
+                      advanced features may require a paid plan, but the standard
+                      account setup and access are included at no cost.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq-answer-4"
+                  >
+                    <span class="question-text">How can I reset my password?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                  </button>
+                  <div id="faq-answer-4" class="faq-answer" role="region" hidden>
+                    <p>
+                      Go to the login page and click the "Forgot Password?"
+                      link. Enter your registered email address and follow the
+                      steps in the reset email to create a new password.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq-answer-5"
+                  >
+                    <span class="question-text">Can I use this website on mobile devices?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                  </button>
+                  <div id="faq-answer-5" class="faq-answer" role="region" hidden>
+                    <p>
+                      Absolutely. The website is designed to be responsive and
+                      mobile-friendly, so you can access it smoothly on phones,
+                      tablets, and desktop computers without losing usability.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq-answer-6"
+                  >
+                    <span class="question-text">How do I contact customer support?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                  </button>
+                  <div id="faq-answer-6" class="faq-answer" role="region" hidden>
+                    <p>
+                      You can reach our support team through the contact form,
+                      email support address, or the help section available on the
+                      website. Our team is happy to assist with account, product,
+                      and technical questions.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq-answer-7"
+                  >
+                    <span class="question-text">Is my personal information safe?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                  </button>
+                  <div id="faq-answer-7" class="faq-answer" role="region" hidden>
+                    <p>
+                      We take data privacy seriously. Personal information is
+                      protected using secure systems, encrypted communication,
+                      and industry-standard protection practices to reduce risk and
+                      protect your account data.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq-answer-8"
+                  >
+                    <span class="question-text">How can I update my profile?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                  </button>
+                  <div id="faq-answer-8" class="faq-answer" role="region" hidden>
+                    <p>
+                      Sign in to your account, open your profile settings, and edit
+                      your personal information such as contact details,
+                      preferences, or profile photo. Save the changes once you are
+                      satisfied with the updates.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq-answer-9"
+                  >
+                    <span class="question-text">Can I access the website without registering?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                  </button>
+                  <div id="faq-answer-9" class="faq-answer" role="region" hidden>
+                    <p>
+                      Yes, many pages and public resources can be viewed without an
+                      account. However, some advanced services, personalized content,
+                      and saved settings may require registration for full access.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button
+                    class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq-answer-10"
+                  >
+                    <span class="question-text">Where can I find more information?</span>
+                    <span class="faq-icon" aria-hidden="true">+</span>
+                  </button>
+                  <div id="faq-answer-10" class="faq-answer" role="region" hidden>
+                    <p>
+                      You can find more details in our Help Center, documentation,
+                      blog articles, and support pages. These resources cover
+                      account setup, features, troubleshooting, and general usage
+                      guidance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="no-results" hidden>
+                <p>No matching questions found. Try a different keyword.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact-strip" aria-labelledby="contact-title">
+          <div class="container contact-inner">
+            <div>
+              <p class="eyebrow">Still have questions?</p>
+              <h3 id="contact-title">Our support team is ready to help.</h3>
+            </div>
+            <a href="mailto:support@faqhub.com" class="cta-button">Contact Us</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <p>© 2026 FAQ Hub. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
